@@ -28,15 +28,15 @@ a {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #dfdfdf;
+  background-color: #cecece;
   background-size: cover;
   background-position: bottom;
 }
 
 @keyframes smooth-appear {
-  to{
+  to {
     bottom: 20px;
-    opacity:1;
+    opacity: 1;
   }
 }
 
@@ -53,8 +53,7 @@ a {
   position: absolute;
   bottom: 0;
   max-width: 100%;
-  animation: animate calc(4s* var(--i)) linear infinite;
-
+  animation: animate calc(4s * var(--i)) linear infinite;
 }
 
 .nuvem {
@@ -63,16 +62,13 @@ a {
 
 @keyframes animate {
   0% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 
   100% {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
 }
-
-
-
 
 .banner .clouds {
   position: absolute;
@@ -87,8 +83,7 @@ a {
   position: absolute;
   bottom: 0;
   max-width: 100%;
-  animation: animate calc(4s* var(--i)) linear infinite;
-
+  animation: animate calc(4s * var(--i)) linear infinite;
 }
 
 .nuvem {
@@ -97,14 +92,45 @@ a {
 
 @keyframes animate {
   0% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 
   100% {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
 }
 
+.fachada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.placas {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+  width: 80px;
+  box-shadow: 1px 20px 20px rgba(0, 0, 0, 0.178);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gif img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  max-height: 300px;
+  max-width: 300px;
+}
 
 /*home, navegador*/
 
@@ -244,7 +270,7 @@ h3 {
   margin-bottom: 40px;
   max-width: fit-content;
   padding: 10px;
-  transition: 0.2s; 
+  transition: 0.2s;
 }
 
 .title-sec:hover {
@@ -252,11 +278,21 @@ h3 {
 }
 
 @keyframes tilt-shaking {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(5deg); }
-  50% { transform: rotate(0eg); }
-  75% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /*sobre*/

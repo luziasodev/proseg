@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
   setTimeout(() => {
     document.querySelector('.loader').style.display='none';
     document.querySelector('.homepage').style.display='block';
-  }, 8000);
+  }, 4000);
 })
 
 
