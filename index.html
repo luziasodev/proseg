@@ -1,1222 +1,879 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
     <title>PROSEG ENGENHARIA</title>
-</head>
-<body>
-    <script src="index.js"></script>
+  </head>
 
-    <!-- navegador -->
-    <nav class="nav">
-        <div class="header">
-            <img src="./images/logo.png" class="logo">
-            <ul>
-                <li><a href="#" class="current">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+  <body>
+    <div class="loader">
+      <div class="banner">
+        <div class="clouds">
+          <img src="./images/loader/cloud1.png" class="nuvem" style="--i: 1" />
+          <img src="./images/loader/cloud2.png" style="--i: 2" />
+          <img src="./images/loader/cloud3.png" style="--i: 3" />
+          <img src="./images/loader/cloud4.png" style="--i: 4" />
+          <img src="./images/loader/cloud5.png" style="--i: 5" />
         </div>
-    </nav>
-   
-    <div class="hero">
-        <div class="header">
-            <img src="./images/proseglogo.png" width="300px">
-            <h1>PROSEG</h1>
-            <hr>
-            <h2>ENGENHARIA</h2> 
+        <div class="fachada">
+          <img src="./images/loader/extintor.webp" class="placas" alt="" />
         </div>
+        <div class="loading">
+          <figure class="gif">
+            <img src="./images/loader/loading.gif" />
+          </figure>
+          <p>Carregando...</p>
+        </div>
+      </div>
     </div>
 
-    <!-- apresentação -->
-
-    <section>
-        <div class="title-sec">
-            <div>SOBRE 🗏🡻</div>
+    <div class="homepage" style="display: none">
+      <!-- navegador -->
+      <nav class="nav">
+        <div class="header">
+          <a href="#hero"><img src="./images/logo.webp" class="logo" /></a>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+          </ul>
         </div>
-        <br>
-        <br>
-        <div class="text">A PROSEG é uma empresa de engenharia multidisciplinar, com especialidade em atender diversos segmentos públicos e privados nas áreas de Segurança Contra Incêndio e Pânico, Construção Civil, Meio Ambiente e Elétrica. Sediada em Conselheiro Lafaiete - MG, atua em todo o território nacional e proporciona aos seus clientes confiabilidade, qualidade e garantia.</div>
-    </section>
+      </nav>
 
-    <!-- stats -->
-
-    <section>
-        <div class="container">
-            <h3 class="stats-heading text-center my-1">
-                Atendemos empresas nacionais e multinacionais em todo o Brasil
-            </h3>
-            <div class="grid grid-3 text-center my-4">
-                <div>
-                    <i class="fa fa-calendar fa-3x"></i>
-                    <h4>6</h4>
-                    <p class="text-secondary">Anos no mercado</p>
-                </div>
-                <div>
-                    <i class="fa fa-map-marker fa-3x"></i>
-                    <h4>6</h4>
-                    <p class="text-secondary">Estados atendidos</p>
-                </div>
-                <div>
-                    <i class="fa fa-file-text fa-3x"></i>
-                    <h4>100</h4>
-                    <p class="text-secondary">Laudos</p>
-                </div>
-                <div>
-                    <i class="fa fa-thumbs-up fa-3x"></i>
-                    <h4>100</h4>
-                    <p class="text-secondary">Projetos aprovados</p>
-                </div>
-                <div>
-                </div>
-            </div>
+      <div id="hero">
+        <div class="header anime-scale">
+          <img src="./images/proseglogo.webp" width="300px" />
+          <h1>
+            <div class="proseg">PROSEG</div>
+          </h1>
+          <hr />
+          <h2>ENGENHARIA</h2>
         </div>
-    </section>
-    <hr>
+      </div>
 
-    <!-- serviços -->
-
-    <section>
-            <div class="title-sec">
-                <div>SERVIÇOS 🛠🡻</div>
+      <!-- apresentação -->
+      <section id="sobre">
+        <div class="container-sobre">
+          <div class="title-sec">SOBRE 🗏🡻</div>
+          <div class="text-sobre">
+            <p>
+              A <strong>PROSEG</strong> é uma empresa de engenharia
+              multidisciplinar, com especialidade em atender diversos segmentos
+              públicos e privados nas áreas de Segurança Contra Incêndio e
+              Pânico, Construção Civil, Meio Ambiente e Elétrica. Sediada em
+              Conselheiro Lafaiete - MG, atua em todo o território nacional e
+              proporciona aos seus clientes confiabilidade, qualidade e
+              garantia.
+            </p>
+            <p>
+              Prezamos pela excelência em todo o processo, investindo tanto em
+              profissionais altamente capacitados quanto na aquisição de novos
+              equipamentos e tecnologias. Sendo assim, a
+              <strong>PROSEG</strong>
+              conta com recursos de ponta para desempenhar sua função com
+              eficiência e eficácia.
+            </p>
+          </div>
+          <div class="container-stats">
+            <h3 class="title-stats">Atendemos empresas em todo o Brasil</h3>
+            <div class="container-sobre-stats">
+              <div class="container-sobre-anos content-sobre">
+                <i class="fa fa-calendar fa-3x"></i>
+                <div class="stats">
+                  <span id="stats-anos">7</span>
+                </div>
+                <div class="text-stats">anos de mercado</div>
+              </div>
+              <div class="container-sobre-estados content-sobre">
+                <i class="fa fa-map-marker fa-3x"></i>
+                <div class="stats">
+                  <span id="stats-estados">7</span>
+                </div>
+                <div class="text-stats">estados</div>
+              </div>
+              <div class="container-sobre-laudos content-sobre">
+                <i class="fa fa-file-text fa-3x"></i>
+                <div class="stats">+<span id="stats-laudos">200</span></div>
+                <div class="text-stats">laudos</div>
+              </div>
+              <div class="container-sobre-projetos content-sobre">
+                <i class="fa fa-thumbs-up fa-3x"></i>
+                <div class="stats">+<span id="stats-projetos">200</span></div>
+                <div class="text-stats">projetos aprovados</div>
+              </div>
             </div>
-            <br>
-            <br>
-            <div class="cards-service">
-                <div class="svc">
-                    <div class="text-card">
-                        <div class="card-border" id="card1">
-                            <div class="title-card1">SEGURANÇA E AMBIENTAL</div>
-                        <br>
-                        <ul class="card-description">
-                            <li>Projetos de Prevenção Contra Incêndio e Pânico (AVCB, CLCB);</li><br>
-                            <li>Laudos do Sistema de Alarme, SPDA (para-raios), CMAR;</li><br>
-                            <li>Treinamento de Brigada de Incêndio;</li><br>
-                            <li>PPRA, PCMSO, PPR, PCA e demais documentos relativos a SSMA;</li><br>
-                        </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="svc">
-                    <div class="text-card">
-                        <div class="card-border" id="card1">
-                            <div class="title-card2">ARQUITETURA E URBANISMO</div>
-                        <br>
-                        <ul class="card-description">
-                            <li>Projetos arquitetônicos (básico e executivo), projetos e execuções de paisagismo, implantações de layout, reurbanização;</li><br>
-                            <li>Execuções de anteprojetos;</li><br>
-                            <li>Pisos, forros, alvenarias, pavimentações, revestimentos, impermeabilização, coberturas, pinturas, texturas, carpintaria, marcenaria, serralheria e vidraçaria;</li><br>
-                          </ul>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="svc">
-                    <div class="text-card">
-                        <div class="card-border">
-                            <div class="title-card3">CIVIL</div>
-                        <br>
-                        <ul class="card-description">
-                            <li>Gerenciamento de empreendimentos;</li><br>
-                            <li>Projetos e execuções de obras, reformas e demolições;</li><br>
-                            <li>Instalações hidráulicas, sanitárias e pluviais;</li><br>
-                            <li>Avaliação de terrenos, terraplanagens, fundações e estruturas;</li><br>
-                            <li>Laudos técnicos, perícias e anomalias em edificações;</li><br>
-                        </ul>
-                        </div> 
-                    </div>
-                </div>
-                <div class="svc">
-                    <div class="text-card">
-                        <div class="card-border">
-                            <div class="title-card4">ELÉTRICA</div>
-                        <br>
-                        <ul class="card-description">
-                            <li>Projetos e instalações Elétricas, SPDA, Fibra Ótica, Telefonia, Informática e Sistemas de Alarme;</li><br>
-                            <li>Equipamentos Industriais;</li><br>
-                            <li>Montagem e instalações de painéis digitalizados de comando, controle e proteção, painéis de serviços Auxiliares CA e CC e Quadros de Força;</li><br>
-                            <li>Laudos e perícias técnicas;</li><br>
-                        </ul>  
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="service">
-                <div class="service grid">
-                    <div class="text">
-                        Nosso diferencial é oferecer uma ampla perspectiva dos fatores técnicos e econômicos. Do projeto à execução, alinhamos as necessidades de cada cliente às normas e leis vigentes, certificando soluções adequadas. <br><br>Prezamos pela excelência em todo o processo, investindo tanto em profissionais altamente capacitados quanto na aquisição de novos equipamentos e tecnologias. Sendo assim, a PROSEG conta com recursos de ponta para desempenhar sua função com primor.
-                    </div>
-                <div class="service">
-                    <div class="form-container">
-                        <form action="processar_formulario.php" method="post">
-                          <div class="form-group">
-                            <label for="nome">Nome:</label>
-                            <input type="text" id="nome" name="nome" required>
-                          </div>
-                          <div class="form-group">
-                            <label for="email">E-mail:</label>
-                            <input type="email" id="email" name="email" required>
-                          </div>
-                          <div class="form-group">
-                            <label for="telefone">Telefone:</label>
-                            <input type="tel" id="telefone" name="telefone" required>
-                          </div>
-                          <div class="form-group">
-                            <label for="assunto">Assunto:</label>
-                            <input type="text" id="assunto" name="assunto" required>
-                          </div>
-                          <div class="form-group">
-                            <label for="proposta">Proposta:</label>
-                            <textarea id="proposta" name="proposta" required></textarea>
-                          </div>
-                          <div class="form-group">
-                            <button type="submit">SOLICITAR ORÇAMENTO</button>
-                          </div>
-                        </form>
-                      </div>
-                </div> 
-                </div> 
-            </div>
-    </section>
-    <br>
-    <br>
-    <hr>
+          </div>
+        </div>
+      </section>
 
-    <!-- portfólio, clientes -->
+      <!-- serviços -->
+      <section id="servicos">
+        <div class="container-servicos">
+          <div class="title-sec">
+            <div>SERVIÇOS 🛠🡻</div>
+          </div>
+          <div class="text-sobre">
+            <p>
+              Nosso diferencial é oferecer uma ampla perspectiva dos fatores
+              técnicos e econômicos. Do projeto à execução, alinhamos as
+              necessidades de cada cliente às normas e legislação vigentes,
+              certificando soluções adequadas.
+            </p>
+          </div>
+          <div class="cards-service">
+            <div class="svc">
+              <div class="text-card">
+                <div class="card-border">
+                  <div class="title-card title-card1">
+                    SEGURANÇA E AMBIENTAL
+                  </div>
+                  <br />
+                  <ul class="card-description">
+                    <li>
+                      Projetos de Prevenção Contra Incêndio e Pânico (AVCB,
+                      CLCB);
+                    </li>
+                    <br />
+                    <li>
+                      Laudos do Sistema de Alarme, SPDA (para-raios), CMAR;
+                    </li>
+                    <br />
+                    <li>Treinamento de Brigada de Incêndio;</li>
+                    <br />
+                    <li>
+                      PPRA, PCMSO, PPR, PCA e demais documentos relativos a
+                      SSMA;
+                    </li>
+                    <br />
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="svc">
+              <div class="text-card">
+                <div class="card-border">
+                  <div class="title-card title-card2">
+                    ARQUITETURA E URBANISMO
+                  </div>
+                  <br />
+                  <ul class="card-description">
+                    <li>
+                      Projetos arquitetônicos (básico e executivo), projetos e
+                      execuções de paisagismo, implantações de layout,
+                      reurbanização;
+                    </li>
+                    <br />
+                    <li>Execuções de anteprojetos;</li>
+                    <br />
+                    <li>
+                      Pisos, forros, alvenarias, pavimentações, revestimentos,
+                      impermeabilização, coberturas, pinturas, texturas,
+                      carpintaria, marcenaria, serralheria e vidraçaria;
+                    </li>
+                    <br />
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="svc">
+              <div class="text-card">
+                <div class="card-border">
+                  <div class="title-card title-card3">CIVIL</div>
+                  <br />
+                  <ul class="card-description">
+                    <li>
+                      Projetos e execuções de obras, reformas e demolições;
+                    </li>
+                    <br />
+                    <li>Gerenciamento de empreendimentos;</li>
+                    <br />
+                    <li>Instalações hidráulicas, sanitárias e pluviais;</li>
+                    <br />
+                    <li>
+                      Avaliação de terrenos, terraplanagens, fundações e
+                      estruturas;
+                    </li>
+                    <br />
+                    <li>
+                      Laudos técnicos, perícias e anomalias em edificações;
+                    </li>
+                    <br />
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="svc">
+              <div class="text-card">
+                <div class="card-border">
+                  <div class="title-card title-card4">ELÉTRICA</div>
+                  <br />
+                  <ul class="card-description">
+                    <li>
+                      Projetos e instalações Elétricas, SPDA, Fibra Ótica,
+                      Telefonia, Informática e Sistemas de Alarme;
+                    </li>
+                    <br />
+                    <li>Equipamentos Industriais;</li>
+                    <br />
+                    <li>
+                      Montagem e instalações de painéis digitalizados de
+                      comando, controle e proteção, painéis de serviços
+                      Auxiliares CA e CC e Quadros de Força;
+                    </li>
+                    <br />
+                    <li>Laudos e perícias técnicas;</li>
+                    <br />
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section>
-        <div class="title-sec">PORTFÓLIO 🗂🡻</div>
+      <!-- contato, descrição engenheiros -->
+      <section id="contato">
+        <div class="container-contato">
+          <div class="title-sec">CONTATO ✉🡻</div>
+
+          <div class="subtitle-sec">FALE CONOSCO</div>
+          <div class="container-redes">
+            <div>
+              <div class="icon">
+                <a
+                  href="https://api.whatsapp.com/send?phone=5531986685752&text=Conversar%20com%20Eng%20Cleto%20Filho"
+                  target="_blank"
+                  ><i class="fa fa-phone fa-2x"></i
+                ></a>
+              </div>
+              <p>Contato</p>
+              <p>+5531986685752</p>
+            </div>
+            <div>
+              <div class="icon">
+                <a href="mailto:prosegengenharia@gmail.com"
+                  ><i class="fa fa-envelope fa-2x"></i
+                ></a>
+              </div>
+              <p>Email</p>
+              <p>prosegengenharia@gmail.com</p>
+            </div>
+            <div>
+              <div class="icon">
+                <a
+                  href="https://www.instagram.com/prosegengenharia"
+                  target="_blank"
+                  ><i class="fa fa-camera fa-2x"></i
+                ></a>
+              </div>
+              <p>Instagram</p>
+              <p>@prosegengenharia</p>
+            </div>
+          </div>
+          <div class="container-form">
+            <form class="form">
+              <label class="field-form nome"
+                ><span>nome completo</span
+                ><input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  required
+                  placeholder="escreva aqui"
+              /></label>
+
+              <label class="field-form telefone"
+                ><span>telefone</span
+                ><input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  required
+                  placeholder="(DDD) 000000000"
+              /></label>
+
+              <label class="field-form email"
+                ><span>email</span
+                ><input
+                  type="text"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="example@mail.com"
+              /></label>
+
+              <label class="field-form assunto"
+                ><span>assunto</span
+                ><input
+                  type="text"
+                  id="assunto"
+                  name="assunto"
+                  required
+                  placeholder="exemplo: orçamento de laudo, projeto e execução"
+              /></label>
+
+              <label class="field-form proposta"
+                ><span>proposta</span
+                ><textarea
+                  name="proposta"
+                  id="proposta"
+                  required
+                  cols="30"
+                  rows="5"
+                  placeholder="detalhamento da proposta"
+                ></textarea>
+              </label>
+              <button type="submit">ENVIAR</button>
+            </form>
+            <div class="mapa">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4321.781533146186!2d-43.80007807857257!3d-20.66572818053424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa1602e559c95d7%3A0x9692243bcba61bf!2sAv.%20Dom%20Pedro%20II%2C%20120%20-%20S%C3%A3o%20Sebastiao%2C%20Conselheiro%20Lafaiete%20-%20MG%2C%2036406-063!5e0!3m2!1spt-BR!2sbr!4v1686701602635!5m2!1spt-BR!2sbr"
+                width="1000"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfólio, clientes -->
+
+      <section id="portfolio">
+        <div class="container-portfolio">
+          <div class="title-sec">PORTFÓLIO 🗂🡻</div>
+          <div class="container-clientes">
             <h3 class="subtitle-sec">NOSSOS CLIENTES</h3>
-            <div class="container-clientes">
-                <div class="foto-clientes">
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial1.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial1.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo1.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial1.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial2.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial2.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo2.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial2.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial3.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial3.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo3.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial3.jpg">
-                </div> -->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial4.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial4.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo4.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial4.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial5.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial5.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo5.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial5.jpg">
-                </div>-->
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial6.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial5(1).jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo6.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial6.jpg">
-                </div>-->
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial7.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial6.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo7.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial7.jpg">
-                </div>-->
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial8.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial7.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo8.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial8.jpg">
-                </div>-->
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial9.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial8.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo9.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial9.jpg">
-                </div>-->
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial10.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial9.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo10.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial10.jpg">
-                </div>-->
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial11.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial10.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial11.jpg">
-                </div>-->
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial12.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial10(1).jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo11.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial12.jpg">
-                </div>-->
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial13.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial11.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo12.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial13.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./portfolio-cliente/industrial14.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial12.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo13.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial14.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial15.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial13.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo14.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./portfolio-cliente/residencial15.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./portfolio-cliente/industrial16.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial14.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo15.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial15.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial16.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial17.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial16.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo16.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial17.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial18.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial17.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo17.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial18.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial19.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial18.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo18.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial19.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial20.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial19(1).jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo19.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial20.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial21.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial20.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo20.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial21.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial22.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial20(1).jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo21.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial22.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial23.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial21.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo22.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial23.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial24.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial22.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo23.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial24.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial25.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial22(1).jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo24.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial25.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial26.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial23.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo25.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial26.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial27.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial24.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo26.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial27.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial28.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial25.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo27.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial28.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial29.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial26.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo28.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial29.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial30.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial27.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo29.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial30.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial31.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial27(1).jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo30.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial31.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial32.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial28.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo31.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial32.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial33.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial29.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo32.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial33.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial34.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial30.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo33.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial34.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial35.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial31.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo34.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial35.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial36.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial32.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo35.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial36.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial37.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial33.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo36.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial37.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial38.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial34.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo37.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial38.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial39.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial35.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo38.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial39.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial40.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial36.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo39.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial40.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial41.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial37.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo40.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial41.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial42.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial38.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo41.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial42.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial43.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial39.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo42.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial43.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial44.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial40.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo43.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial44.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial45.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial41.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo44.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial45.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial46.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial42.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo45.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial46.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial47.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial43.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo46.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial47.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial48.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial44.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo47.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial48.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial49.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial45.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo48.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial49.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial50.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial46.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo49.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial50.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial51.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial47.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo50.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial51.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial52.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial48.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo51.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial52.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial53.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial49.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo52.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial53.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial54.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial50.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo53.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial54.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial55.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial51.jpg">
-                </div>
-                <!--<div class="cliente">
-                    <img src="./images/portfolio-cliente/coletivo54.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/residencial55.jpg">
-                </div>
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/industrial56.jpg">
-                </div>-->
-                <div class="cliente">
-                    <img src="./images/portfolio-cliente/comercial52.jpg">
-                </div>
-                </div>
+            <div class="foto-clientes">
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/industrial1.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial1.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/coletivo1.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercialbh.png" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/industrial2.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial2.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/coletivo2.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/residencial1.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/industrial3.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial3.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/coletivo3.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/residencial2.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/industrial4.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial4.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/coletivo4.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/residencial4.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/industrial5.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial5.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/coletivo5.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial5(1).jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/coletivo6.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial6.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/coletivo7.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial7.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/coletivo8.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial8.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/coletivo9.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial9.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/coletivo10.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial10.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial10(1).jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/coletivo11.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial11.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/coletivo12.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial12.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/coletivo13.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial13.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/coletivo14.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial14.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/coletivo15.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial15.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial16.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial17.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial18.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial19(1).jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial20.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial20(1).jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial21.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial22.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial22(1).jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial23.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial24.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial25.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial26.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial27.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial27(1).jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial28.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial29.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial30.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/ctaf.png" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial31.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial32.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial33.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial34.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial35.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial36.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial37.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial38.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial39.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial40.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial41.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial42.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial43.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial44.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial45.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial46.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial47.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial48.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial49.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial50.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial51.jpg" />
+              </div>
+              <div class="cliente">
+                <img src="./images/portfolio-cliente/comercial52.jpg" />
+              </div>
             </div>
-            <div class="container-galeria">
-                <input type="radio" name="fotos" id="check1" checked>
-                        <input type="radio" name="fotos" id="check2">
-                        <input type="radio" name="fotos" id="check3">
-                        <input type="radio" name="fotos" id="check4">
-                        <input type="radio" name="fotos" id="check5">
-                <h3 class="subtitle-sec">GALERIA DE PROJETOS</h3>
-                <div class="top-content">
-                    <h4>PROJETOS</h4>
-                    <label for="check1">Todos</label>
-                    <label for="check2">Industrial</label>
-                    <label for="check3">Comercial</label>
-                    <label for="check4">Coletivo</label>
-                    <label for="check5">Residencial</label>
-                </div>
-                <div class="foto-galeria">
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial1.jpg" alt="teste">
-                    </div>
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial1.jpg">
-                    </div>
-                    <div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo1.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial1.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial2.jpg">
-                    </div>
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial2.jpg">
-                    </div>
-                    <div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo2.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial2.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial3.jpg">
-                    </div>
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial3.jpg">
-                    </div>
-                    <div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo3.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial3.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial3.jpg">
-                    </div>
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial4.jpg">
-                    </div>
-                    <div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo4.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial4.jpg">
-                    </div>
-                    <!--<div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial5.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial5.jpg">
-                    </div>
-                    <div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo5.jpg">
-                    </div>
-                    <!--<div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial5.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial6.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial6.jpg">
-                    </div>
-                    <div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo6.jpg">
-                    </div>
-                    <!--<div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial6.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial7.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial7.jpg">
-                    </div>
-                    <div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo7.jpg">
-                    </div>
-                    <!--<div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial7.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial8.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial8.jpg">
-                    </div>
-                    <div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo8.jpg">
-                    </div>
-                    <!--<div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial8.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial9.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial9.jpg">
-                    </div>
-                    <div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo9.jpg">
-                    </div>
-                    <!--<div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial9.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial10.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial10.jpg">
-                    </div>
-                    <div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo10.jpg">
-                    </div>
-                    <!--<div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial10.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial11.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial11.jpg">
-                    </div>
-                    <!--<div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo11.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial11.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial12.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial12.jpg">
-                    </div>
-                    <!--<div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo12.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial12.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial13.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial13.jpg">
-                    </div>
-                    <!--<div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo13.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial13.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial14.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial14.jpg">
-                    </div>
-                    <!--<div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo14.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial14.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial15.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial15.jpg">
-                    </div>
-                    <!--<div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo15.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial15.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial16.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial16.jpg">
-                    </div>
-                    <!--<div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo16.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial16.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial17.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial17.jpg">
-                    </div>
-                    <!--<div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo17.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial17.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial18.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial18.jpg">
-                    </div>
-                    <!--<div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo18.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial18.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial19.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial19.jpg">
-                    </div>
-                    <!--<div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo19.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial19.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial20.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial20.jpg">
-                    </div>
-                    <!--<div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo20.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial20.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial21.jpg">
-                    </div>-->
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial21.jpg">
-                    </div>
-                    <!--<div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo21.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial21.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial.jpg">
-                    </div>
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial.jpg">
-                    </div>
-                    <div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial.jpg">
-                    </div>
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial.jpg">
-                    </div>
-                    <div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial.jpg">
-                    </div>
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial.jpg">
-                    </div>
-                    <div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial.jpg">
-                    </div>
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial.jpg">
-                    </div>
-                    <div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial.jpg">
-                    </div>
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial.jpg">
-                    </div>
-                    <div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial.jpg">
-                    </div>
-                    <div class="pic industrial">
-                        <img src="./images/portfolio-projetos/industrial.jpg">
-                    </div>
-                    <div class="pic comercial">
-                        <img src="./images/portfolio-projetos/comercial.jpg">
-                    </div>
-                    <div class="pic coletivo">
-                        <img src="./images/portfolio-projetos/coletivo.jpg">
-                    </div>
-                    <div class="pic residencial">
-                        <img src="./images/portfolio-projetos/residencial.jpg">
-                    </div>-->
-                </div>
+          </div>
+          <div class="container-galeria">
+            <h3 class="subtitle-sec">NOSSA GALERIA</h3>
+            <ul class="top-content">
+              <li>
+                <h4>PROJETOS</h4>
+              </li>
+              <li class="categoria-projetos">todos</li>
+              <li class="categoria-projetos">industrial</li>
+              <li class="categoria-projetos">comercial</li>
+              <li class="categoria-projetos">coletivo</li>
+              <li class="categoria-projetos">residencial</li>
+            </ul>
+
+            <div class="foto-galeria">
+              <div class="pic industrial">
+                <img
+                  src="./images/portfolio-projetos/industrial1.jpg"
+                  alt="VALE, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial1.jpg"
+                  alt="Bristol Easy Hotel, Betim/MG"
+                />
+              </div>
+              <div class="pic coletivo">
+                <img
+                  src="./images/portfolio-projetos/coletivo1.jpg"
+                  alt="Igreja Santo Expedito, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic residencial">
+                <img
+                  src="./images/portfolio-projetos/residencial1.jpg"
+                  alt="Condomínio Residencial Gran Viver, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic industrial">
+                <img
+                  src="./images/portfolio-projetos/industrial2.jpg"
+                  alt="VGX Mineração, Mariana/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial2.jpg"
+                  alt="Bristol Easy Hotel, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic coletivo">
+                <img
+                  src="./images/portfolio-projetos/coletivo2.jpg"
+                  alt="Igreja São Sebastião, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic residencial">
+                <img
+                  src="./images/portfolio-projetos/residencial2.jpg"
+                  alt="Condomínio Residencial Bela Vista, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic industrial">
+                <img
+                  src="./images/portfolio-projetos/industrial3.jpg"
+                  alt="VALE, Ouro Preto/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial3.jpg"
+                  alt="Hotel Meri, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic coletivo">
+                <img
+                  src="./images/portfolio-projetos/coletivo3.jpg"
+                  alt="Basílica do Sagrado Coração de Jesus, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic residencial">
+                <img
+                  src="./images/portfolio-projetos/residencial3.jpg"
+                  alt="Condomínio Mara, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial4.jpg"
+                  alt="H2 Hotel, Congonhas/MG"
+                />
+              </div>
+              <div class="pic coletivo">
+                <img
+                  src="./images/portfolio-projetos/coletivo4.jpg"
+                  alt="Igreja Matriz de São Gonçalo do Amarante, Catas Altas da Noruega/MG"
+                />
+              </div>
+              <div class="pic residencial">
+                <img
+                  src="./images/portfolio-projetos/residencial4.jpg"
+                  alt="Condomínio Bela Vista, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial5.jpg"
+                  alt="CLIOF, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic coletivo">
+                <img
+                  src="./images/portfolio-projetos/coletivo5.jpg"
+                  alt="Clube Recreativo Dom Pedro II, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial6.jpg"
+                  alt="Labclin, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic coletivo">
+                <img
+                  src="./images/portfolio-projetos/coletivo6.jpg"
+                  alt="CTAF - Clube de Tiro, Queluzito/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial7.jpg"
+                  alt="Panibom, Ouro Branco/MG"
+                />
+              </div>
+              <div class="pic coletivo">
+                <img
+                  src="./images/portfolio-projetos/coletivo7.jpg"
+                  alt="UNIPAC, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial8.jpg"
+                  alt="Jardim Point Shopping, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic coletivo">
+                <img
+                  src="./images/portfolio-projetos/coletivo8.jpg"
+                  alt="Colégio Educar, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial9.jpg"
+                  alt="Orquídea Shopping, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic coletivo">
+                <img
+                  src="./images/portfolio-projetos/coletivo9.jpg"
+                  alt="Câmara Municipal, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial10.jpg"
+                  alt="WFE Auto Center, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic coletivo">
+                <img
+                  src="./images/portfolio-projetos/coletivo10.jpg"
+                  alt="Escola Municipal Marechal Deodoro da Fonseca, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial11.jpg"
+                  alt="Megatron, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial12.jpg"
+                  alt="JDE Aviation Manutenção de Aeronaves, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial13.jpg"
+                  alt="Transpedrosa, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial14.jpg"
+                  alt="Resende Auto Escola, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial15.jpg"
+                  alt="Sol e Neve, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial16.jpg"
+                  alt="Espaço Laser, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial17.jpg"
+                  alt="Auto Fácil Veículos, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial18.jpg"
+                  alt="DISMOVE, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial19.jpg"
+                  alt="Edifício Iasid Bedran, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial20.jpg"
+                  alt="Av Towner Center, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial21.jpg"
+                  alt="Boate Tróia, Entre Rios de Minas/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial22.jpg"
+                  alt="Brindar Recepções e Eventos, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial23.jpg"
+                  alt="Vitinho Gás, Conselheiro Lafaiete/MG"
+                />
+              </div>
+              <div class="pic comercial">
+                <img
+                  src="./images/portfolio-projetos/comercial24.jpg"
+                  alt="Souza Gás, Congonhas/MG"
+                />
+              </div>
             </div>
-    </section>
-    <br>
-    <br>
-    <hr>
+          </div>
+        </div>
+      </section>
 
-    <!-- contato, descrição Cleto Filho -->
-
-    <section>
-            <div class="title-sec">CONTATO ✉🡻</div>
-    </section>
-
-    <footer>
-
-    </footer>
-    
-</body>
+      <footer></footer>
+    </div>
+  </body>
 </html>
