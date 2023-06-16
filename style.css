@@ -16,7 +16,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 400;
-  padding-bottom: 50px;
 }
 
 a {
@@ -53,37 +52,7 @@ a {
   position: absolute;
   bottom: 0;
   max-width: 100%;
-  animation: animate calc(4s * var(--i)) linear infinite;
-}
-
-.nuvem {
-  z-index: 10;
-}
-
-@keyframes animate {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-.banner .clouds {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.banner .clouds img {
-  position: absolute;
-  bottom: 0;
-  max-width: 100%;
-  animation: animate calc(4s * var(--i)) linear infinite;
+  animation: animate calc(1.5s * var(--i)) linear infinite;
 }
 
 .nuvem {
@@ -238,10 +207,25 @@ h2 {
   font-family: "Roboto Slab", serif;
   font-weight: 800;
   text-align: center;
-  letter-spacing: 6px;
   color: #333;
   text-shadow: 0 0 1px #c0c0c0, 0 0 30px #ffffff, 0px 0px 5px #666161,
     0 0 150px #e4dada;
+}
+
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  animation: flip 3s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
 }
 
 h3 {
@@ -249,6 +233,10 @@ h3 {
 }
 
 .title-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
   font-family: "Montserrat", sans-serif;
   color: #ffffffc0;
   font-size: 20px;
@@ -295,43 +283,51 @@ h3 {
   }
 }
 
+.title-sec .title-icon {
+  display: flex;
+}
+
+.title-sec .title-icon img {
+  width: 22px;
+}
+
 /*sobre*/
 
 @keyframes background-slide {
   0% {
-    background-image: url("./images/backgrounds/sobreprojeto.jpg");
+    background-image: url("./images/backgrounds/sobreprojeto.webp");
   }
 
   11% {
-    background-image: url("./images/backgrounds/engambiental.jpg");
+    background-image: url("./images/backgrounds/engambiental.webp");
   }
 
   25% {
-    background-image: url("./images/backgrounds/sobreobra.jpg");
+    background-image: url("./images/backgrounds/sobreobra.webp");
   }
 
   33% {
-    background-image: url("./images/backgrounds/sobremangueira.jpg");
+    background-image: url("./images/backgrounds/sobremangueira.webp");
   }
 
   44% {
-    background-image: url("./images/backgrounds/projetoobra.jpg");
+    background-image: url("./images/backgrounds/projetoobra.webp");
   }
 
   55% {
-    background-image: url("./images/backgrounds/sobreparede.jpg");
+    background-image: url("./images/backgrounds/sobreparede.webp");
   }
 
   66% {
-    background-image: url("./images/backgrounds/engambiental2.jpg");
+    background-image: url("./images/backgrounds/engambiental2.webp");
   }
 
   77% {
-    background-image: url("./images/backgrounds/eletricista.jpg");
+    background-image: url("./images/backgrounds/eletricista.webp");
   }
 
   100% {
-    background-image: url("./images/backgrounds/sobreprojeto.jpg");
+    background-image: url("./images/backgrounds/sobreprojeto.webp");
   }
 }
 
@@ -358,7 +354,7 @@ h3 {
   flex-direction: column;
   font-size: 17px;
   justify-self: end;
-  background-color: #070707da;
+  background-color: #070707e8;
   border-radius: 2px;
   box-shadow: 0 20px 20px rgba(83, 80, 80, 0.2);
   color: #e0d9d9;
@@ -530,7 +526,7 @@ h3 {
 /* redes de contato */
 
 .mapa {
-  flex: 1 1 400px;
+  flex: 1 1 300px;
   height: 100%;
   width: 100%;
 }
@@ -548,6 +544,7 @@ h3 {
   justify-content: space-between;
   width: 100%;
   padding-bottom: 40px;
+  font-size: 13px;
   gap: 30px;
 }
 
@@ -581,7 +578,6 @@ h3 {
 .form-container {
   display: flex;
   justify-content: center;
-
   width: 100%;
   margin: 0 auto;
   padding: 20px;
@@ -607,10 +603,10 @@ h3 {
   grid-template-columns: 1fr 1fr;
   row-gap: 20px;
   column-gap: 30px;
-  flex: 2 1 400px;
+  flex: 2 1 300px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .field-form {
@@ -627,7 +623,7 @@ h3 {
 
 .field-form input,
 .field-form textarea {
-  padding: 10px;
+  padding: 8px;
   background-color: #252525;
   color: #cccccc;
   border: none;
@@ -839,8 +835,23 @@ h3 {
 }
 
 footer {
-  background-color: #333;
+  background-color: #1a1818;
   color: #fff;
-  height: 100%;
-  margin-top: 40px;
+  height: 150px;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+  gap: 4px;
+}
+
+.info p {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  font-size: 11px;
 }
