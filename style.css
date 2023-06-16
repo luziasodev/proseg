@@ -38,6 +38,65 @@ a {
   text-decoration: inherit;
 }
 
+.title-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffffc0;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  border: 3px solid transparent;
+  border-radius: 0.2rem;
+  background: url("./images/backgrounds/green_metal.webp") padding-box,
+    linear-gradient(
+        to right,
+        rgba(168, 166, 166, 0.692),
+        #e0dede,
+        rgb(175, 170, 170)
+      )
+      border-box;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
+  margin-bottom: 40px;
+  max-width: fit-content;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.title-sec:hover {
+  animation: tilt-shaking 0.25s infinite;
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.title-sec .title-icon {
+  display: flex;
+}
+
+.title-sec .title-icon img {
+  width: 22px;
+}
+
 /* loader */
 .banner {
   position: relative;
@@ -102,6 +161,51 @@ a {
   max-width: 300px;
 }
 
+/*estilização títulos*/
+h1 {
+  color: #1a1818;
+  font-family: "Bernard MT Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 95px;
+  background: #ff1c1c;
+  background: -webkit-linear-gradient(to bottom, #da0505 41%, #7d0c0b 100%);
+  background: -moz-linear-gradient(to bottom, #da0505 41%, #7d0c0b 100%);
+  background: linear-gradient(to bottom, #da0505 41%, #7d0c0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+h2 {
+  font-size: 29px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  text-shadow: 0 0 1px #c0c0c0, 0 0 30px #ffffff, 0px 0px 3px #666161,
+    0 0 150px #e4dada;
+}
+
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  animation: flip 3s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
+
+h3 {
+  font-size: 25px;
+}
+
 /*nav, home*/
 .anime-scale {
   opacity: 0;
@@ -163,7 +267,7 @@ a {
   color: rgb(231, 32, 32);
 }
 
-#hero {
+#home {
   background-color: #e9e8e8;
   background-repeat: no-repeat;
   background-size: cover;
@@ -179,7 +283,7 @@ a {
   z-index: -2 !important;
 }
 
-#hero::before {
+#home::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -187,110 +291,6 @@ a {
   height: 100%;
   background-color: #1a1818;
   z-index: -1;
-}
-
-/*estilização títulos*/
-h1 {
-  color: #1a1818;
-  font-family: "Bernard MT Condensed", sans-serif;
-  font-weight: 500;
-  font-size: 95px;
-  background: #ff1c1c;
-  background: -webkit-linear-gradient(to bottom, #da0505 41%, #7d0c0b 100%);
-  background: -moz-linear-gradient(to bottom, #da0505 41%, #7d0c0b 100%);
-  background: linear-gradient(to bottom, #da0505 41%, #7d0c0b 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-}
-
-h2 {
-  font-size: 29px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  text-align: center;
-  color: #333;
-  text-shadow: 0 0 1px #c0c0c0, 0 0 30px #ffffff, 0px 0px 3px #666161,
-    0 0 150px #e4dada;
-}
-
-.waviy {
-  position: relative;
-}
-.waviy span {
-  position: relative;
-  display: inline-block;
-  animation: flip 3s infinite;
-  animation-delay: calc(0.2s * var(--i));
-}
-@keyframes flip {
-  0%,
-  80% {
-    transform: rotateY(360deg);
-  }
-}
-
-h3 {
-  font-size: 25px;
-}
-
-.title-sec {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 6px;
-  font-family: "Montserrat", sans-serif;
-  color: #ffffffc0;
-  font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-  width: 100%;
-  border: 3px solid transparent;
-  border-radius: 0.2rem;
-  background: url("./images/backgrounds/green_metal.jpg") padding-box,
-    linear-gradient(
-        to right,
-        rgba(168, 166, 166, 0.692),
-        #e0dede,
-        rgb(175, 170, 170)
-      )
-      border-box;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-  margin-top: 100px;
-  margin-bottom: 40px;
-  max-width: fit-content;
-  padding: 10px;
-  transition: 0.2s;
-}
-
-.title-sec:hover {
-  animation: tilt-shaking 0.25s infinite;
-}
-
-@keyframes tilt-shaking {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(5deg);
-  }
-  50% {
-    transform: rotate(0eg);
-  }
-  75% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.title-sec .title-icon {
-  display: flex;
-}
-
-.title-sec .title-icon img {
-  width: 22px;
 }
 
 /*sobre*/
@@ -406,7 +406,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("./images/backgrounds/black-brick-wall-texture.jpg");
+  background-image: url("./images/backgrounds/black-brick-wall-texture.webp");
   background-size: cover;
   padding-bottom: 60px;
   padding-top: 20px;
@@ -588,6 +588,7 @@ h3 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   color: #fff;
   max-width: 1000px;
   border-radius: 1rem;
@@ -730,7 +731,7 @@ h3 {
 }
 
 .top-content {
-  background-image: url("./images/backgrounds/topcontent.jpg");
+  background-image: url("./images/backgrounds/topcontent.webp");
   background-size: contain;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 90%;
@@ -815,7 +816,7 @@ h3 {
   left: 0;
   width: 100%;
   height: 0px;
-  background-color: #333;
+  background-color: #333333d8;
   opacity: 0;
   color: #cccccc;
   display: flex;
