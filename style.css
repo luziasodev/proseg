@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Lora:wght@700&family=Montserrat:ital,wght@0,400;0,600;0,800;1,900&family=Roboto+Slab:wght@800&display=swap");
+@import url("https://db.onlinewebfonts.com/c/a552118ceee33dff8a6acab5d1c10b60?family=Bernard+MT+Condensed");
+@font-face {
+  font-family: "Bernard MT Condensed";
+  src: url("//db.onlinewebfonts.com/t/a552118ceee33dff8a6acab5d1c10b60.eot");
+  src: url("//db.onlinewebfonts.com/t/a552118ceee33dff8a6acab5d1c10b60.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/a552118ceee33dff8a6acab5d1c10b60.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/a552118ceee33dff8a6acab5d1c10b60.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/a552118ceee33dff8a6acab5d1c10b60.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/a552118ceee33dff8a6acab5d1c10b60.svg#Bernard MT Condensed")
+      format("svg");
+}
 
 * {
   box-sizing: border-box;
@@ -23,6 +38,7 @@ a {
   text-decoration: inherit;
 }
 
+/* loader */
 .banner {
   position: relative;
   width: 100%;
@@ -69,27 +85,12 @@ a {
   }
 }
 
-.fachada {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  gap: 20px;
-}
-
-.placas {
-  display: flex;
-  justify-content: center;
-  margin: 100px;
-  width: 80px;
-  box-shadow: 1px 20px 20px rgba(0, 0, 0, 0.178);
-}
-
 .loading {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 25vh;
 }
 
 .gif img {
@@ -101,8 +102,7 @@ a {
   max-width: 300px;
 }
 
-/*home, navegador*/
-
+/*nav, home*/
 .anime-scale {
   opacity: 0;
   scale: 0.7;
@@ -190,25 +190,27 @@ a {
 }
 
 /*estilização títulos*/
-
 h1 {
   color: #1a1818;
-  font-family: "Roboto Slab", serif;
-  font-weight: bold;
-  font-size: 80px;
-  color: rgb(214, 21, 21);
-  text-shadow: 0 0 1px #ec6464, 0 0 30px #d1c6c6, 0px 0px 5px #5a4545,
-    0 0 150px #3b2f2f;
+  font-family: "Bernard MT Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 95px;
+  background: #ff1c1c;
+  background: -webkit-linear-gradient(to bottom, #da0505 41%, #7d0c0b 100%);
+  background: -moz-linear-gradient(to bottom, #da0505 41%, #7d0c0b 100%);
+  background: linear-gradient(to bottom, #da0505 41%, #7d0c0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
 }
 
 h2 {
-  font-size: 35px;
-  font-family: "Roboto Slab", serif;
-  font-weight: 800;
+  font-size: 29px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   text-align: center;
   color: #333;
-  text-shadow: 0 0 1px #c0c0c0, 0 0 30px #ffffff, 0px 0px 5px #666161,
+  text-shadow: 0 0 1px #c0c0c0, 0 0 30px #ffffff, 0px 0px 3px #666161,
     0 0 150px #e4dada;
 }
 
@@ -292,7 +294,6 @@ h3 {
 }
 
 /*sobre*/
-
 @keyframes background-slide {
   0% {
     background-image: url("./images/backgrounds/sobreprojeto.webp");
@@ -413,7 +414,6 @@ h3 {
 }
 
 /* cartões de serviço */
-
 .cards-service {
   display: flex;
   flex-wrap: wrap;
@@ -500,7 +500,6 @@ h3 {
 }
 
 /* contato */
-
 #contato {
   height: 100%;
   display: flex;
@@ -524,7 +523,6 @@ h3 {
 }
 
 /* redes de contato */
-
 .mapa {
   flex: 1 1 300px;
   height: 100%;
@@ -574,7 +572,6 @@ h3 {
 }
 
 /*formulário orçamento*/
-
 .form-container {
   display: flex;
   justify-content: center;
@@ -663,7 +660,6 @@ h3 {
 }
 
 /* portfólio */
-
 .container-portfolio {
   display: flex;
   flex-direction: column;
@@ -690,7 +686,6 @@ h3 {
 }
 
 /* clientes */
-
 .container-clientes {
   width: 100%;
   margin-bottom: 20px;
