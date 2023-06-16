@@ -644,7 +644,7 @@ h3 {
   color: #fff;
   border: 2px solid transparent;
   border-radius: 0.2rem;
-  background: url("./images/backgrounds/blue_metal.jpg") padding-box,
+  background: url("./images/backgrounds/blue_metal.webp") padding-box,
     linear-gradient(
         to right,
         rgba(168, 166, 166, 0.692),
